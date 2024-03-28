@@ -1,0 +1,140 @@
+parameters:
+  # 200
+  process.response.ok.code: 200
+  process.response.ok.status: 'SUCCESS'
+  process.response.ok.message: ''
+
+  process.response.created.code: 201
+  process.response.created.status: 'SUCCESS'
+  process.response.created.message: ''
+
+  process.response.accepted.code: 202
+  process.response.accepted.status: 'SUCCESS'
+  process.response.accepted.message: ''
+
+  process.response.no_content.code: 204
+  process.response.no_content.status: 'SUCCESS'
+  process.response.no_content.message: ''
+
+  # 400
+  process.response.bad_request.code: 400
+  process.response.bad_request.status: 'BAD_REQUEST'
+  process.response.bad_request.message: ''
+
+  process.response.validation_failed.code: 400
+  process.response.validation_failed.status: 'VALIDATION_FAILED'
+  process.response.validation_failed.message: ''
+
+  process.response.unauthorized.code: 401
+  process.response.unauthorized.status: 'UNAUTHORIZED'
+  process.response.unauthorized.message: ''
+
+  process.response.forbidden.code: 403
+  process.response.forbidden.status: 'PERMISSION_DENIED'
+  process.response.forbidden.message: ''
+
+  process.response.not_found.code: 404
+  process.response.not_found.status: 'NOT_FOUND'
+  process.response.not_found.message: 'Not Found'
+
+  process.response.method_not_allowed.code: 405
+  process.response.method_not_allowed.status: 'METHOD_NOT_ALLOWED'
+  process.response.method_not_allowed.message: 'Method Not Allowed'
+
+  # 500
+  process.response.internal_server_error.code: 500
+  process.response.internal_server_error.status: 'ERROR_INTERNAL'
+  process.response.internal_server_error.message: 'Internal error occurred'
+
+  process.response.bad_gateway.code: 502
+  process.response.bad_gateway.status: 'BAD_GATEWAY'
+  process.response.bad_gateway.message: ''
+
+  process.response.service_unavailable.code: 503
+  process.response.service_unavailable.status: 'SERVICE_UNAVAILABLE'
+  process.response.service_unavailable.message: ''
+
+services:
+  process.response.ok:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.ok.code%'
+      - '%process.response.ok.status%'
+      - '%process.response.ok.message%'
+
+  process.response.created:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.created.code%'
+      - '%process.response.created.status%'
+      - '%process.response.created.message%'
+
+  process.response.no_content:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.no_content.code%'
+      - '%process.response.no_content.status%'
+      - '%process.response.no_content.message%'
+
+  process.response.unauthorized:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.unauthorized.code%'
+      - '%process.response.unauthorized.status%'
+      - '%process.response.unauthorized.message%'
+
+  process.response.forbidden:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.forbidden.code%'
+      - '%process.response.forbidden.status%'
+      - '%process.response.forbidden.message%'
+
+  process.response.not_found:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.not_found.code%'
+      - '%process.response.not_found.status%'
+      - '%process.response.not_found.message%'
+
+  process.response.bad_request:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.bad_request.code%'
+      - '%process.response.bad_request.status%'
+      - '%process.response.bad_request.message%'
+
+  process.response.validation_failed:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.validation_failed.code%'
+      - '%process.response.validation_failed.status%'
+      - '%process.response.validation_failed.message%'
+
+  process.response.method_not_allowed:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.method_not_allowed.code%'
+      - '%process.response.method_not_allowed.status%'
+      - '%process.response.method_not_allowed.message%'
+
+  process.response.internal_server_error:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.internal_server_error.code%'
+      - '%process.response.internal_server_error.status%'
+      - '%process.response.internal_server_error.message%'
+
+  process.response.bad_gateway:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.bad_gateway.code%'
+      - '%process.response.bad_gateway.status%'
+      - '%process.response.bad_gateway.message%'
+
+  process.response.service_unavailable:
+    class: App\ProcessBundle\Response\Response
+    arguments:
+      - '%process.response.service_unavailable.code%'
+      - '%process.response.service_unavailable.status%'
+      - '%process.response.service_unavailable.message%'

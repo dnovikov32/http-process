@@ -1,0 +1,3 @@
+services:
+  process.response.formatter.default_formatter:
+    class: App\ProcessBundle\Response\Formatter\DefaultFormatter

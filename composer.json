@@ -1,0 +1,23 @@
+{
+  "name": "dnovikov32/http-process-bundle",
+  "type": "symfony-bundle",
+  "description": "http process bundle",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.1",
+    "league/pipeline": "^1.0",
+    "symfony/framework-bundle": "~4.4|~5.0",
+    "symfony/validator": "~4.4|~5.0",
+    "symfony/property-access": "~4.4|~5.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": { "HttpProcess\\": "src/" }
+  }
+}

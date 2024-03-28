@@ -1,0 +1,46 @@
+default:
+  pipeline: 'process.response.pipeline.default'
+
+groups:
+  not_found:
+    response: 'process.response.not_found'
+    pipeline: 'process.response.pipeline.default'
+    priority: 10
+    exceptions:
+      - 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException'
+
+  bad_request:
+    response: 'process.response.bad_request'
+    exceptions:
+      - 'Symfony\Component\HttpKernel\Exception\BadRequestHttpException'
+
+  validation_failed:
+    response: 'process.response.validation_failed'
+    exceptions:
+      - 'App\ProcessBundle\Request\Exception\ValidationException'
+
+  method_not_allowed:
+    response: 'process.response.method_not_allowed'
+    exceptions:
+      - 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException'
+
+  unauthorized:
+    response: 'process.response.unauthorized'
+    exceptions:
+      - 'Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException'
+
+  forbidden:
+    response: 'process.response.forbidden'
+    exceptions:
+      - 'Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException'
+
+  service_unavailable:
+    response: 'process.response.service_unavailable'
+    exceptions:
+      - 'Symfony\Component\HttpKernel\Exception\ServiceUnavailableHttpException'
+
+  internal_server_error:
+    response: 'process.response.internal_server_error'
+    priority: 0
+    exceptions:
+      - '\Throwable'

@@ -1,0 +1,14 @@
+services:
+  process.serializer:
+    class: Symfony\Component\Serializer\Serializer
+    arguments:
+      - ['@process.serializer.object_normalizer', '@serializer.denormalizer.array']
+      - ['@serializer.encoder.json']
+
+  process.serializer.object_normalizer:
+    class: Symfony\Component\Serializer\Normalizer\ObjectNormalizer
+    arguments:
+      - ~
+      - '@serializer.name_converter.camel_case_to_snake_case'
+      - ~
+      - '@property_info.reflection_extractor'

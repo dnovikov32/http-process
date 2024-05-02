@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\ProcessBundle\Request\Transformer;
+namespace HttpProcess\Request\Transformer;
 
-use App\ProcessBundle\Request\ApiRequestInterface;
+use HttpProcess\Request\ApiRequestInterface;
 use Symfony\Component\HttpFoundation\Request;
 
 interface RequestTransformerInterface

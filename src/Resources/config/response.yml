@@ -56,84 +56,84 @@ parameters:
 
 services:
   process.response.ok:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.ok.code%'
       - '%process.response.ok.status%'
       - '%process.response.ok.message%'
 
   process.response.created:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.created.code%'
       - '%process.response.created.status%'
       - '%process.response.created.message%'
 
   process.response.no_content:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.no_content.code%'
       - '%process.response.no_content.status%'
       - '%process.response.no_content.message%'
 
   process.response.unauthorized:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.unauthorized.code%'
       - '%process.response.unauthorized.status%'
       - '%process.response.unauthorized.message%'
 
   process.response.forbidden:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.forbidden.code%'
       - '%process.response.forbidden.status%'
       - '%process.response.forbidden.message%'
 
   process.response.not_found:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.not_found.code%'
       - '%process.response.not_found.status%'
       - '%process.response.not_found.message%'
 
   process.response.bad_request:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.bad_request.code%'
       - '%process.response.bad_request.status%'
       - '%process.response.bad_request.message%'
 
   process.response.validation_failed:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.validation_failed.code%'
       - '%process.response.validation_failed.status%'
       - '%process.response.validation_failed.message%'
 
   process.response.method_not_allowed:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.method_not_allowed.code%'
       - '%process.response.method_not_allowed.status%'
       - '%process.response.method_not_allowed.message%'
 
   process.response.internal_server_error:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.internal_server_error.code%'
       - '%process.response.internal_server_error.status%'
       - '%process.response.internal_server_error.message%'
 
   process.response.bad_gateway:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.bad_gateway.code%'
       - '%process.response.bad_gateway.status%'
       - '%process.response.bad_gateway.message%'
 
   process.response.service_unavailable:
-    class: App\ProcessBundle\Response\Response
+    class: HttpProcess\Response\Response
     arguments:
       - '%process.response.service_unavailable.code%'
       - '%process.response.service_unavailable.status%'

@@ -1,15 +1,15 @@
 services:
   process.response.stage.format_response.default:
-    class: App\ProcessBundle\Response\Stage\FormatResponse
+    class: HttpProcess\Response\Stage\FormatResponse
     arguments:
       - '@process.response.formatter.default_formatter'
 
   process.response.stage.create_response.default:
-    class: App\ProcessBundle\Response\Stage\CreateResponse
+    class: HttpProcess\Response\Stage\CreateResponse
     arguments:
       - '@process.response.transformer.default_transformer'
 
   process.response.stage.create_response.json:
-    class: App\ProcessBundle\Response\Stage\CreateResponse
+    class: HttpProcess\Response\Stage\CreateResponse
     arguments:
       - '@process.response.transformer.json_transformer'

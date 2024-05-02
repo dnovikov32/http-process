@@ -1,8 +1,8 @@
 services:
   process.response.transformer.default_transformer:
-    class: App\ProcessBundle\Response\Transformer\DefaultTransformer
+    class: HttpProcess\Response\Transformer\DefaultTransformer
 
   process.response.transformer.json_transformer:
-    class: App\ProcessBundle\Response\Transformer\JsonTransformer
+    class: HttpProcess\Response\Transformer\JsonTransformer
     arguments:
       - '@process.serializer'

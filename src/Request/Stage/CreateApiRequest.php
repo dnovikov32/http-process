@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\ProcessBundle\Request\Stage;
+namespace HttpProcess\Request\Stage;
 
-use App\ProcessBundle\Request\ApiRequestInterface;
-use App\ProcessBundle\Request\Transformer\RequestTransformerInterface;
+use HttpProcess\Request\ApiRequestInterface;
+use HttpProcess\Request\Transformer\RequestTransformerInterface;
 use League\Pipeline\StageInterface;
 use Symfony\Component\HttpFoundation\Request;
 

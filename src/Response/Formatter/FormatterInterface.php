@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\ProcessBundle\Response\Formatter;
+namespace HttpProcess\Response\Formatter;
 
-use App\ProcessBundle\Response\ResponseInterface;
+use HttpProcess\Response\ResponseInterface;
 
 interface FormatterInterface
 {

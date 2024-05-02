@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\ProcessBundle;
+namespace HttpProcess;
 
-use App\ProcessBundle\DependencyInjection\Compiler\EventListenersPass;
+use HttpProcess\DependencyInjection\Compiler\EventListenersPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

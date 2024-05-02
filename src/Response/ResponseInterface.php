@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\ProcessBundle\Response;
+namespace HttpProcess\Response;
 
 use Throwable;
 

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\ProcessBundle\Controller;
+namespace HttpProcess\Controller;
 
-use App\ProcessBundle\Response\ResponseInterface;
+use HttpProcess\Response\ResponseInterface;
 use League\Pipeline\PipelineInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;

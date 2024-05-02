@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\ProcessBundle\DependencyInjection\Compiler;
+namespace HttpProcess\DependencyInjection\Compiler;
 
-use App\ProcessBundle\EventListener\ExceptionListener;
-use App\ProcessBundle\EventListener\SuccessListener;
+use HttpProcess\EventListener\ExceptionListener;
+use HttpProcess\EventListener\SuccessListener;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;

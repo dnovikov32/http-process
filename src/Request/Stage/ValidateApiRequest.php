@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\ProcessBundle\Request\Stage;
+namespace HttpProcess\Request\Stage;
 
 use League\Pipeline\StageInterface;
-use App\ProcessBundle\Request\ApiRequestInterface;
-use App\ProcessBundle\Request\Exception\ValidationException;
+use HttpProcess\Request\ApiRequestInterface;
+use HttpProcess\Request\Exception\ValidationException;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 final class ValidateApiRequest implements StageInterface

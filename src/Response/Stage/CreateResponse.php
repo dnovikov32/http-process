@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\ProcessBundle\Response\Stage;
+namespace HttpProcess\Response\Stage;
 
-use App\ProcessBundle\Response\ResponseInterface;
+use HttpProcess\Response\ResponseInterface;
 use League\Pipeline\StageInterface;
-use App\ProcessBundle\Response\Transformer\ResponseTransformerInterface;
+use HttpProcess\Response\Transformer\ResponseTransformerInterface;
 use Symfony\Component\HttpFoundation\Response as HttpResponse;
 
 final class CreateResponse implements StageInterface

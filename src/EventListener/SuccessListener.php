@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\ProcessBundle\EventListener;
+namespace HttpProcess\EventListener;
 
 use League\Pipeline\PipelineInterface;
-use App\ProcessBundle\Response\ResponseInterface;
+use HttpProcess\Response\ResponseInterface;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
 
 final class SuccessListener

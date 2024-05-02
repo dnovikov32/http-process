@@ -17,7 +17,7 @@ groups:
   validation_failed:
     response: 'process.response.validation_failed'
     exceptions:
-      - 'App\ProcessBundle\Request\Exception\ValidationException'
+      - 'HttpProcess\Request\Exception\ValidationException'
 
   method_not_allowed:
     response: 'process.response.method_not_allowed'

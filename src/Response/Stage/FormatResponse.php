@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\ProcessBundle\Response\Stage;
+namespace HttpProcess\Response\Stage;
 
-use App\ProcessBundle\Response\Formatter\FormatterInterface;
+use HttpProcess\Response\Formatter\FormatterInterface;
 use League\Pipeline\StageInterface;
-use App\ProcessBundle\Response\ResponseInterface;
+use HttpProcess\Response\ResponseInterface;
 
 final class FormatResponse implements StageInterface
 {

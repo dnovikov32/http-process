@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess\Response\Stage;
+namespace Dnovikov32\HttpProcess\Response\Stage;
 
 use League\Pipeline\StageInterface;
-use HttpProcess\Response\ApiResponseInterface;
-use HttpProcess\Response\ResponseInterface;
+use Dnovikov32\HttpProcess\Response\ApiResponseInterface;
+use Dnovikov32\HttpProcess\Response\ResponseInterface;
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 

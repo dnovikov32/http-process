@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess\Response\Formatter;
+namespace Dnovikov32\HttpProcess\Response\Formatter;
 
-use HttpProcess\Response\ResponseInterface;
+use Dnovikov32\HttpProcess\Response\ResponseInterface;
 
 interface FormatterInterface
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess\DependencyInjection;
+namespace Dnovikov32\HttpProcess\DependencyInjection;
 
 use Exception;
 use Symfony\Component\Config\FileLocator;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess\Response;
+namespace Dnovikov32\HttpProcess\Response;
 
 use Throwable;
 

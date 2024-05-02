@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess\Response\Transformer;
+namespace Dnovikov32\HttpProcess\Response\Transformer;
 
-use HttpProcess\Response\ResponseInterface;
+use Dnovikov32\HttpProcess\Response\ResponseInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Serializer\SerializerInterface;
 

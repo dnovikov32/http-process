@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess\EventListener;
+namespace Dnovikov32\HttpProcess\EventListener;
 
 use League\Pipeline\PipelineInterface;
-use HttpProcess\Response\ResponseInterface;
+use Dnovikov32\HttpProcess\Response\ResponseInterface;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
 use Psr\Log\LoggerInterface;

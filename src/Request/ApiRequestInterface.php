@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess\Request;
+namespace Dnovikov32\HttpProcess\Request;
 
 interface ApiRequestInterface
 {

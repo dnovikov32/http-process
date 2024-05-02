@@ -17,7 +17,7 @@ groups:
   validation_failed:
     response: 'process.response.validation_failed'
     exceptions:
-      - 'HttpProcess\Request\Exception\ValidationException'
+      - 'Dnovikov32\HttpProcess\Request\Exception\ValidationException'
 
   method_not_allowed:
     response: 'process.response.method_not_allowed'

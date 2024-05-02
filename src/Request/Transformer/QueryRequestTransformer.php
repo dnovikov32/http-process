@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess\Request\Transformer;
+namespace Dnovikov32\HttpProcess\Request\Transformer;
 
-use HttpProcess\Request\ApiRequestInterface;
-use HttpProcess\Request\Exception\BadRequestException;
+use Dnovikov32\HttpProcess\Request\ApiRequestInterface;
+use Dnovikov32\HttpProcess\Request\Exception\BadRequestException;
 use ReflectionClass;
 use ReflectionException;
 use Symfony\Component\HttpFoundation\Request;

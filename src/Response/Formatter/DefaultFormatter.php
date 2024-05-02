@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess\Response\Formatter;
+namespace Dnovikov32\HttpProcess\Response\Formatter;
 
-use HttpProcess\Response\Dto\ResponseContent;
-use HttpProcess\Response\ResponseInterface;
+use Dnovikov32\HttpProcess\Response\Dto\ResponseContent;
+use Dnovikov32\HttpProcess\Response\ResponseInterface;
 use Symfony\Component\Validator\ConstraintViolationInterface;
 
 final class DefaultFormatter implements FormatterInterface

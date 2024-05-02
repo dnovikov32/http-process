@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HttpProcess;
 
-use HttpProcess\DependencyInjection\Compiler\EventListenersPass;
+use Dnovikov32\HttpProcess\DependencyInjection\Compiler\EventListenersPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

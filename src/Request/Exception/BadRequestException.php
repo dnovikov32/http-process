@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess\Request\Exception;
+namespace Dnovikov32\HttpProcess\Request\Exception;
 
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 

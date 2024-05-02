@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess\Controller;
+namespace Dnovikov32\HttpProcess\Controller;
 
-use HttpProcess\Response\ResponseInterface;
+use Dnovikov32\HttpProcess\Response\ResponseInterface;
 use League\Pipeline\PipelineInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;

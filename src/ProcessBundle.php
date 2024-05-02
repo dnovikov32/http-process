@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HttpProcess;
+namespace Dnovikov32\HttpProcess;
 
 use Dnovikov32\HttpProcess\DependencyInjection\Compiler\EventListenersPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

@@ -12,7 +12,7 @@ use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\Yaml\Yaml;
 
-final class ProcessExtension extends Extension
+final class HttpProcessExtension extends Extension
 {
     private const CONFIG_DIRECTORY = __DIR__ . '/../Resources/config';
 

@@ -1,8 +1,8 @@
 services:
-  process.response.transformer.default_transformer:
+  http_process.response.transformer.default_transformer:
     class: Dnovikov32\HttpProcess\Response\Transformer\DefaultTransformer
 
-  process.response.transformer.json_transformer:
+  http_process.response.transformer.json_transformer:
     class: Dnovikov32\HttpProcess\Response\Transformer\JsonTransformer
     arguments:
-      - '@process.serializer'
+      - '@http_process.serializer'

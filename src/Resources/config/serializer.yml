@@ -1,11 +1,11 @@
 services:
-  process.serializer:
+  http_process.serializer:
     class: Symfony\Component\Serializer\Serializer
     arguments:
-      - ['@process.serializer.object_normalizer', '@serializer.denormalizer.array']
+      - ['@http_process.serializer.object_normalizer', '@serializer.denormalizer.array']
       - ['@serializer.encoder.json']
 
-  process.serializer.object_normalizer:
+  http_process.serializer.object_normalizer:
     class: Symfony\Component\Serializer\Normalizer\ObjectNormalizer
     arguments:
       - ~

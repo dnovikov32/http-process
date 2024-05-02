@@ -1,140 +1,140 @@
 parameters:
   # 200
-  process.response.ok.code: 200
-  process.response.ok.status: 'SUCCESS'
-  process.response.ok.message: ''
+  http_process.response.ok.code: 200
+  http_process.response.ok.status: 'SUCCESS'
+  http_process.response.ok.message: ''
 
-  process.response.created.code: 201
-  process.response.created.status: 'SUCCESS'
-  process.response.created.message: ''
+  http_process.response.created.code: 201
+  http_process.response.created.status: 'SUCCESS'
+  http_process.response.created.message: ''
 
-  process.response.accepted.code: 202
-  process.response.accepted.status: 'SUCCESS'
-  process.response.accepted.message: ''
+  http_process.response.accepted.code: 202
+  http_process.response.accepted.status: 'SUCCESS'
+  http_process.response.accepted.message: ''
 
-  process.response.no_content.code: 204
-  process.response.no_content.status: 'SUCCESS'
-  process.response.no_content.message: ''
+  http_process.response.no_content.code: 204
+  http_process.response.no_content.status: 'SUCCESS'
+  http_process.response.no_content.message: ''
 
   # 400
-  process.response.bad_request.code: 400
-  process.response.bad_request.status: 'BAD_REQUEST'
-  process.response.bad_request.message: ''
+  http_process.response.bad_request.code: 400
+  http_process.response.bad_request.status: 'BAD_REQUEST'
+  http_process.response.bad_request.message: ''
 
-  process.response.validation_failed.code: 400
-  process.response.validation_failed.status: 'VALIDATION_FAILED'
-  process.response.validation_failed.message: ''
+  http_process.response.validation_failed.code: 400
+  http_process.response.validation_failed.status: 'VALIDATION_FAILED'
+  http_process.response.validation_failed.message: ''
 
-  process.response.unauthorized.code: 401
-  process.response.unauthorized.status: 'UNAUTHORIZED'
-  process.response.unauthorized.message: ''
+  http_process.response.unauthorized.code: 401
+  http_process.response.unauthorized.status: 'UNAUTHORIZED'
+  http_process.response.unauthorized.message: ''
 
-  process.response.forbidden.code: 403
-  process.response.forbidden.status: 'PERMISSION_DENIED'
-  process.response.forbidden.message: ''
+  http_process.response.forbidden.code: 403
+  http_process.response.forbidden.status: 'PERMISSION_DENIED'
+  http_process.response.forbidden.message: ''
 
-  process.response.not_found.code: 404
-  process.response.not_found.status: 'NOT_FOUND'
-  process.response.not_found.message: 'Not Found'
+  http_process.response.not_found.code: 404
+  http_process.response.not_found.status: 'NOT_FOUND'
+  http_process.response.not_found.message: 'Not Found'
 
-  process.response.method_not_allowed.code: 405
-  process.response.method_not_allowed.status: 'METHOD_NOT_ALLOWED'
-  process.response.method_not_allowed.message: 'Method Not Allowed'
+  http_process.response.method_not_allowed.code: 405
+  http_process.response.method_not_allowed.status: 'METHOD_NOT_ALLOWED'
+  http_process.response.method_not_allowed.message: 'Method Not Allowed'
 
   # 500
-  process.response.internal_server_error.code: 500
-  process.response.internal_server_error.status: 'ERROR_INTERNAL'
-  process.response.internal_server_error.message: 'Internal error occurred'
+  http_process.response.internal_server_error.code: 500
+  http_process.response.internal_server_error.status: 'ERROR_INTERNAL'
+  http_process.response.internal_server_error.message: 'Internal error occurred'
 
-  process.response.bad_gateway.code: 502
-  process.response.bad_gateway.status: 'BAD_GATEWAY'
-  process.response.bad_gateway.message: ''
+  http_process.response.bad_gateway.code: 502
+  http_process.response.bad_gateway.status: 'BAD_GATEWAY'
+  http_process.response.bad_gateway.message: ''
 
-  process.response.service_unavailable.code: 503
-  process.response.service_unavailable.status: 'SERVICE_UNAVAILABLE'
-  process.response.service_unavailable.message: ''
+  http_process.response.service_unavailable.code: 503
+  http_process.response.service_unavailable.status: 'SERVICE_UNAVAILABLE'
+  http_process.response.service_unavailable.message: ''
 
 services:
-  process.response.ok:
+  http_process.response.ok:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.ok.code%'
-      - '%process.response.ok.status%'
-      - '%process.response.ok.message%'
+      - '%http_process.response.ok.code%'
+      - '%http_process.response.ok.status%'
+      - '%http_process.response.ok.message%'
 
-  process.response.created:
+  http_process.response.created:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.created.code%'
-      - '%process.response.created.status%'
-      - '%process.response.created.message%'
+      - '%http_process.response.created.code%'
+      - '%http_process.response.created.status%'
+      - '%http_process.response.created.message%'
 
-  process.response.no_content:
+  http_process.response.no_content:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.no_content.code%'
-      - '%process.response.no_content.status%'
-      - '%process.response.no_content.message%'
+      - '%http_process.response.no_content.code%'
+      - '%http_process.response.no_content.status%'
+      - '%http_process.response.no_content.message%'
 
-  process.response.unauthorized:
+  http_process.response.unauthorized:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.unauthorized.code%'
-      - '%process.response.unauthorized.status%'
-      - '%process.response.unauthorized.message%'
+      - '%http_process.response.unauthorized.code%'
+      - '%http_process.response.unauthorized.status%'
+      - '%http_process.response.unauthorized.message%'
 
-  process.response.forbidden:
+  http_process.response.forbidden:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.forbidden.code%'
-      - '%process.response.forbidden.status%'
-      - '%process.response.forbidden.message%'
+      - '%http_process.response.forbidden.code%'
+      - '%http_process.response.forbidden.status%'
+      - '%http_process.response.forbidden.message%'
 
-  process.response.not_found:
+  http_process.response.not_found:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.not_found.code%'
-      - '%process.response.not_found.status%'
-      - '%process.response.not_found.message%'
+      - '%http_process.response.not_found.code%'
+      - '%http_process.response.not_found.status%'
+      - '%http_process.response.not_found.message%'
 
-  process.response.bad_request:
+  http_process.response.bad_request:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.bad_request.code%'
-      - '%process.response.bad_request.status%'
-      - '%process.response.bad_request.message%'
+      - '%http_process.response.bad_request.code%'
+      - '%http_process.response.bad_request.status%'
+      - '%http_process.response.bad_request.message%'
 
-  process.response.validation_failed:
+  http_process.response.validation_failed:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.validation_failed.code%'
-      - '%process.response.validation_failed.status%'
-      - '%process.response.validation_failed.message%'
+      - '%http_process.response.validation_failed.code%'
+      - '%http_process.response.validation_failed.status%'
+      - '%http_process.response.validation_failed.message%'
 
-  process.response.method_not_allowed:
+  http_process.response.method_not_allowed:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.method_not_allowed.code%'
-      - '%process.response.method_not_allowed.status%'
-      - '%process.response.method_not_allowed.message%'
+      - '%http_process.response.method_not_allowed.code%'
+      - '%http_process.response.method_not_allowed.status%'
+      - '%http_process.response.method_not_allowed.message%'
 
-  process.response.internal_server_error:
+  http_process.response.internal_server_error:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.internal_server_error.code%'
-      - '%process.response.internal_server_error.status%'
-      - '%process.response.internal_server_error.message%'
+      - '%http_process.response.internal_server_error.code%'
+      - '%http_process.response.internal_server_error.status%'
+      - '%http_process.response.internal_server_error.message%'
 
-  process.response.bad_gateway:
+  http_process.response.bad_gateway:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.bad_gateway.code%'
-      - '%process.response.bad_gateway.status%'
-      - '%process.response.bad_gateway.message%'
+      - '%http_process.response.bad_gateway.code%'
+      - '%http_process.response.bad_gateway.status%'
+      - '%http_process.response.bad_gateway.message%'
 
-  process.response.service_unavailable:
+  http_process.response.service_unavailable:
     class: Dnovikov32\HttpProcess\Response\Response
     arguments:
-      - '%process.response.service_unavailable.code%'
-      - '%process.response.service_unavailable.status%'
-      - '%process.response.service_unavailable.message%'
+      - '%http_process.response.service_unavailable.code%'
+      - '%http_process.response.service_unavailable.status%'
+      - '%http_process.response.service_unavailable.message%'

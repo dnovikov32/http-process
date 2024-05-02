@@ -8,7 +8,7 @@ use Dnovikov32\HttpProcess\DependencyInjection\Compiler\EventListenersPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-final class ProcessBundle extends Bundle
+final class HttpProcessBundle extends Bundle
 {
     public function build(ContainerBuilder $container): void
     {

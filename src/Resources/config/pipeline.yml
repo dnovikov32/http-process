@@ -1,7 +1,7 @@
 services:
-  process.response.pipeline.default:
+  http_process.response.pipeline.default:
     class: League\Pipeline\Pipeline
     arguments:
       - ~
-      - '@process.response.stage.format_response.default'
-      - '@process.response.stage.create_response.json'
+      - '@http_process.response.stage.format_response.default'
+      - '@http_process.response.stage.create_response.json'

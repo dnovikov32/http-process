@@ -16,7 +16,7 @@ final class Configuration implements ConfigurationInterface
 
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('process');
+        $treeBuilder = new TreeBuilder('http_process');
         $rootNode = $treeBuilder->getRootNode();
 
         $rootNode->
@@ -38,7 +38,7 @@ final class Configuration implements ConfigurationInterface
             ->addDefaultsIfNotSet()
             ->children()
                 ->scalarNode('pipeline')
-                    ->defaultValue('process.pipeline.default')
+                    ->defaultValue('http_process.pipeline.default')
                 ->end()
                 ->integerNode('priority')
                     ->defaultValue(self::DEFAULT_PRIORITY)

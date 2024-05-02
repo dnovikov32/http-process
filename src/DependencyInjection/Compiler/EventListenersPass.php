@@ -17,14 +17,14 @@ final class EventListenersPass implements CompilerPassInterface
     {
         $this->successListenerPass($container);
 
-        if ($container->hasParameter('process.groups')) {
+        if ($container->hasParameter('http_process.groups')) {
             $this->exceptionListenersPass($container);
         }
     }
 
     private function successListenerPass(ContainerBuilder $container): void
     {
-        $successConfig = $container->getParameter('process.pipeline.success');
+        $successConfig = $container->getParameter('http_process.pipeline.success');
         $pipelineDefinition = $container->findDefinition($successConfig['pipeline']);
 
         $successListenerDefinition = new Definition(SuccessListener::class, [$pipelineDefinition]);
@@ -32,16 +32,16 @@ final class EventListenersPass implements CompilerPassInterface
             ->setPublic(true)
             ->addTag('kernel.event_listener', ['event' => 'kernel.view']);
 
-        $container->setDefinition('process.success_listener', $successListenerDefinition);
+        $container->setDefinition('http_process.success_listener', $successListenerDefinition);
     }
 
     private function exceptionListenersPass(ContainerBuilder $container): void
     {
-        $groups = $container->getParameter('process.groups');
+        $groups = $container->getParameter('http_process.groups');
 
         foreach ($groups as $name => $group) {
             $exceptionListener = $this->createExceptionListener($group, $group['exceptions'], $container);
-            $container->setDefinition(sprintf('process.%s_listener', $name), $exceptionListener);
+            $container->setDefinition(sprintf('http_process.%s_listener', $name), $exceptionListener);
         }
     }
 

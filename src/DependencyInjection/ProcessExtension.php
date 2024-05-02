@@ -28,7 +28,7 @@ final class ProcessExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('process.pipeline.default', $config['default']);
+        $container->setParameter('http_process.pipeline.default', $config['default']);
 
         $this->loadSuccess($config, $container);
 
@@ -46,19 +46,19 @@ final class ProcessExtension extends Extension
 
     private function loadSuccess(array $config, ContainerBuilder $container): void
     {
-        $defaultConfig = $container->getParameter('process.pipeline.default');
+        $defaultConfig = $container->getParameter('http_process.pipeline.default');
         $defaultPipeline = $defaultConfig['pipeline'];
 
         if (!isset($config['success']['pipeline'])) {
             $config['success']['pipeline'] = $defaultPipeline;
         }
 
-        $container->setParameter('process.pipeline.success', $config['success']);
+        $container->setParameter('http_process.pipeline.success', $config['success']);
     }
 
     private function loadGroups(array $config, ContainerBuilder $container): void
     {
-        $defaultConfig = $container->getParameter('process.pipeline.default');
+        $defaultConfig = $container->getParameter('http_process.pipeline.default');
         $groups = [];
 
         foreach ($config['groups'] as $groupName => $group) {
@@ -67,6 +67,6 @@ final class ProcessExtension extends Extension
             $groups[$groupName] = $group;
         }
 
-        $container->setParameter('process.groups', $groups);
+        $container->setParameter('http_process.groups', $groups);
     }
 }

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Dnovikov32\HttpProcess\DependencyInjection\Compiler;
+namespace Dnovikov32\HttpProcessBundle\DependencyInjection\Compiler;
 
-use Dnovikov32\HttpProcess\EventListener\ExceptionListener;
-use Dnovikov32\HttpProcess\EventListener\SuccessListener;
+use Dnovikov32\HttpProcessBundle\EventListener\ExceptionListener;
+use Dnovikov32\HttpProcessBundle\EventListener\SuccessListener;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;

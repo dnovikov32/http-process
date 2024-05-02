@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Dnovikov32\HttpProcess\Response\Stage;
+namespace Dnovikov32\HttpProcessBundle\Response\Stage;
 
-use Dnovikov32\HttpProcess\Response\Formatter\FormatterInterface;
+use Dnovikov32\HttpProcessBundle\Response\Formatter\FormatterInterface;
 use League\Pipeline\StageInterface;
-use Dnovikov32\HttpProcess\Response\ResponseInterface;
+use Dnovikov32\HttpProcessBundle\Response\ResponseInterface;
 
 final class FormatResponse implements StageInterface
 {

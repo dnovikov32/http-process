@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Dnovikov32\HttpProcess\Request\Stage;
+namespace Dnovikov32\HttpProcessBundle\Request\Stage;
 
-use Dnovikov32\HttpProcess\Request\ApiRequestInterface;
-use Dnovikov32\HttpProcess\Request\Transformer\RequestTransformerInterface;
+use Dnovikov32\HttpProcessBundle\Request\ApiRequestInterface;
+use Dnovikov32\HttpProcessBundle\Request\Transformer\RequestTransformerInterface;
 use League\Pipeline\StageInterface;
 use Symfony\Component\HttpFoundation\Request;
 

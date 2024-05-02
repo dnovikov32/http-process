@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dnovikov32\HttpProcess\DependencyInjection;
+namespace Dnovikov32\HttpProcessBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;

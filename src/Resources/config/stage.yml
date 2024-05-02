@@ -1,15 +1,15 @@
 services:
   http_process.response.stage.format_response.default:
-    class: Dnovikov32\HttpProcess\Response\Stage\FormatResponse
+    class: Dnovikov32\HttpProcessBundle\Response\Stage\FormatResponse
     arguments:
       - '@http_process.response.formatter.default_formatter'
 
   http_process.response.stage.create_response.default:
-    class: Dnovikov32\HttpProcess\Response\Stage\CreateResponse
+    class: Dnovikov32\HttpProcessBundle\Response\Stage\CreateResponse
     arguments:
       - '@http_process.response.transformer.default_transformer'
 
   http_process.response.stage.create_response.json:
-    class: Dnovikov32\HttpProcess\Response\Stage\CreateResponse
+    class: Dnovikov32\HttpProcessBundle\Response\Stage\CreateResponse
     arguments:
       - '@http_process.response.transformer.json_transformer'

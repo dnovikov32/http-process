@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Dnovikov32\HttpProcess\Response\Transformer;
+namespace Dnovikov32\HttpProcessBundle\Response\Transformer;
 
-use Dnovikov32\HttpProcess\Response\ResponseInterface;
+use Dnovikov32\HttpProcessBundle\Response\ResponseInterface;
 use Symfony\Component\HttpFoundation\Response;
 
 interface ResponseTransformerInterface

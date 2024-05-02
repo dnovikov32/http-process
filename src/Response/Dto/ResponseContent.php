@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dnovikov32\HttpProcess\Response\Dto;
+namespace Dnovikov32\HttpProcessBundle\Response\Dto;
 
 final class ResponseContent
 {

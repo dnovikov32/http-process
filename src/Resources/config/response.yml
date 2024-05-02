@@ -56,84 +56,84 @@ parameters:
 
 services:
   http_process.response.ok:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.ok.code%'
       - '%http_process.response.ok.status%'
       - '%http_process.response.ok.message%'
 
   http_process.response.created:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.created.code%'
       - '%http_process.response.created.status%'
       - '%http_process.response.created.message%'
 
   http_process.response.no_content:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.no_content.code%'
       - '%http_process.response.no_content.status%'
       - '%http_process.response.no_content.message%'
 
   http_process.response.unauthorized:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.unauthorized.code%'
       - '%http_process.response.unauthorized.status%'
       - '%http_process.response.unauthorized.message%'
 
   http_process.response.forbidden:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.forbidden.code%'
       - '%http_process.response.forbidden.status%'
       - '%http_process.response.forbidden.message%'
 
   http_process.response.not_found:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.not_found.code%'
       - '%http_process.response.not_found.status%'
       - '%http_process.response.not_found.message%'
 
   http_process.response.bad_request:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.bad_request.code%'
       - '%http_process.response.bad_request.status%'
       - '%http_process.response.bad_request.message%'
 
   http_process.response.validation_failed:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.validation_failed.code%'
       - '%http_process.response.validation_failed.status%'
       - '%http_process.response.validation_failed.message%'
 
   http_process.response.method_not_allowed:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.method_not_allowed.code%'
       - '%http_process.response.method_not_allowed.status%'
       - '%http_process.response.method_not_allowed.message%'
 
   http_process.response.internal_server_error:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.internal_server_error.code%'
       - '%http_process.response.internal_server_error.status%'
       - '%http_process.response.internal_server_error.message%'
 
   http_process.response.bad_gateway:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.bad_gateway.code%'
       - '%http_process.response.bad_gateway.status%'
       - '%http_process.response.bad_gateway.message%'
 
   http_process.response.service_unavailable:
-    class: Dnovikov32\HttpProcess\Response\Response
+    class: Dnovikov32\HttpProcessBundle\Response\Response
     arguments:
       - '%http_process.response.service_unavailable.code%'
       - '%http_process.response.service_unavailable.status%'

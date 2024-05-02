@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dnovikov32\HttpProcess\Request\Exception;
+namespace Dnovikov32\HttpProcessBundle\Request\Exception;
 
 use Exception;
 use Symfony\Component\Validator\ConstraintViolationListInterface;

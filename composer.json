@@ -11,7 +11,7 @@
     "symfony/property-access": "~6.0"
   },
   "autoload": {
-    "psr-4": { "Dnovikov32\\HttpProcess\\": "src/" }
+    "psr-4": { "Dnovikov32\\HttpProcessBundle\\": "src/" }
   },
   "config": {
     "sort-packages": true,
